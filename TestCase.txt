@@ -1,0 +1,173 @@
+Test 1: 	Start the program with project name and greater than one argument.
+			e.g. ./project1 debug hello
+
+Outcome: 	Display an error message saying unacceptable number of arguments and exit program.
+
+Actual:		True
+-------------------------------------------------------------------------------------------------
+Test 2:		Start the program with project name and debug argument
+			e.g ./project1 debug
+
+Outcome:	Display message saying that the program is now in debug mode and run program
+			as usual.
+
+Actual:		True
+-------------------------------------------------------------------------------------------------
+Test 3:		Start the program with project name
+			e.g. ./project1
+
+Outcome:	Menu is displayed
+
+Actual:		True
+-------------------------------------------------------------------------------------------------
+Test 4:		Select the exit program option
+
+Outcome:	Display "Good bye!" and exit program
+
+Actual: 	True
+-------------------------------------------------------------------------------------------------
+Test 5:		Select the print all option
+
+Outcome:	Display nothing and return to the menu
+
+Actual:		True
+-------------------------------------------------------------------------------------------------
+Test 6:		Select print specific record option
+
+Outcome:	Display message to enter an account number
+
+Actual:		True
+-------------------------------------------------------------------------------------------------
+Test 7:		Enter an account number that is not in the data base.
+
+Outcome:	Return to main menu
+
+Actual: 	True
+------------------------------------------------------------------------------------------------- 
+Test 8:		Select to enter another account number, and enter an invalid account number
+			e.g. ACC9834
+
+Outcome:	Display that the account number is invalid and return to main menu
+
+Actual:		True
+-------------------------------------------------------------------------------------------------
+Test 9:		Select option to return to main menu.
+
+Outcome:	Display the main menu.
+
+Actual: 	True
+-------------------------------------------------------------------------------------------------
+Test 10:	Select the delete record option
+
+Outcome:	Prompt user to enter account number
+
+Actual:		True
+-------------------------------------------------------------------------------------------------
+Test 11:	Enter an account number that is not in the data base.
+
+Outcome:	Display that the account number is invalid and prompt user to either return to main
+			menu, or enter another account number. 
+
+Actual:		True
+-------------------------------------------------------------------------------------------------
+Test 12:	Exit program and start program with project name, and select option to add record.
+
+Outcome:	Prompt user to enter an account number.
+
+Actual:		True
+-------------------------------------------------------------------------------------------------
+Test 13:	Enter account1 
+
+Outcome:	Prompt user to enter name.
+
+Actual:		True
+-------------------------------------------------------------------------------------------------
+Test 14:	Enter name1.
+
+Outcome:	Prompt user to enter address
+
+Actual:		True
+-------------------------------------------------------------------------------------------------
+Test 15:	Enter address1.
+
+Outcome: 	Prompt user that add was successful and return to menu.
+
+Actual:		True
+-------------------------------------------------------------------------------------------------
+Test 16:	Select print all option
+
+Outcome:	Only one record should be printed once with the values: address1, name1, and account1.
+			Return to menu
+
+Actual:		True
+-------------------------------------------------------------------------------------------------
+Test 17:	Select print by account number and enter account1.
+
+Outcome:	Print out record with the values: address1, name1, and account1.
+			Return to menu.
+
+Actual:		True
+-------------------------------------------------------------------------------------------------
+Test 18:	Select option to modify record and enter account1.
+
+Outcome:	Prompt user to modify address of the account1. 	
+
+Actual:		True		
+-------------------------------------------------------------------------------------------------
+Test 19:	Enter address2.
+
+Outcome:	Display that address was updated and return to menu. 
+
+Actual:		True
+-------------------------------------------------------------------------------------------------
+Test 20:	Select option to print all
+
+Outcome:	Display record with values address2, name1, and account1.
+			Return to menu.
+
+Actual:		True
+-------------------------------------------------------------------------------------------------
+Test 21:	Select option to delete a record.
+
+Outcome:	Prompt user to enter an account number to delete.
+
+Actual:		True
+-------------------------------------------------------------------------------------------------
+Test 22:	Enter account1.
+
+Outcome:	Display that record was successfully deleted and return to menu.
+
+Actual:		True
+-------------------------------------------------------------------------------------------------
+Test 23:	Select option to print all.
+
+Outcome:	Display nothing and return to menu. 
+
+Actual:		True
+-------------------------------------------------------------------------------------------------
+Test 24:	Add account1, name1, and address1 to the database. Then add account2, name2, address2
+			to the database. Then select to print all.
+
+Outcome:	Display the record with account2, name2, address2 and then account1, name1, and 
+			address1. 
+
+Actual:		True
+-------------------------------------------------------------------------------------------------
+Test 25:	Delete record with account2 as the key and then print all.
+
+Outcome:	Display the record with account1, name1 and address1. 
+
+Actual:		True
+-------------------------------------------------------------------------------------------------
+Test 26:	Add a record with account1, name2, address2. and then print all
+
+Outcome:	Display records with account1, name2, address2, and account1, name1, address1
+
+Actual:		True
+-------------------------------------------------------------------------------------------------
+Test 27:	delete record with account1. then print out the database
+
+Outcome:	Display nothing, will delete all duplicates. 
+
+Actual:		True
+-------------------------------------------------------------------------------------------------

@@ -1,0 +1,307 @@
+Script started on Tue Mar 14 21:27:58 2017
+uhx01% make clean
+rm *o project1
+uhx01% make
+gcc -Wall -ansi -pedantic-errors -c main.c
+gcc -Wall -ansi -pedantic-errors -c UI_functions.c
+gcc -Wall -ansi -pedantic-errors -c DB_functions.c
+DB_functions.c: In function `addRecord':
+DB_functions.c:27: warning: void format, pointer arg (arg 2)
+DB_functions.c: In function `printRecord':
+DB_functions.c:102: warning: void format, record arg (arg 2)
+DB_functions.c: In function `modifyRecord':
+DB_functions.c:153: warning: void format, record arg (arg 2)
+DB_functions.c: In function `printAllRecords':
+DB_functions.c:202: warning: void format, record arg (arg 2)
+DB_functions.c: In function `deleteRecord':
+DB_functions.c:247: warning: void format, pointer arg (arg 2)
+gcc -Wall -ansi -pedantic-errors -c helpers.c
+In file included from helpers.c:4:
+prototypes.h:20: warning: "struct record" declared inside parameter list
+prototypes.h:20: warning: its scope is only this definition or declaration, which is probably not what you want
+prototypes.h:22: warning: "struct record" declared inside parameter list
+prototypes.h:24: warning: "struct record" declared inside parameter list
+prototypes.h:26: warning: "struct record" declared inside parameter list
+prototypes.h:28: warning: "struct record" declared inside parameter list
+prototypes.h:30: warning: "struct record" declared inside parameter list
+prototypes.h:32: warning: "struct record" declared inside parameter list
+gcc -o project1 main.o UI_functions.o DB_functions.o helpers.o
+uhx01% ./project1
+Would you like to start with the program with a file import? (0/1)
+0
+                        Welcome to the Bank of ICS212! 
+To navigate through the program type the value in the [] and hit enter!
+-------------------------------------------
+[1]     Add a new record in the database.
+[2]     Modify a record in the database.
+[3]     Print information about a record using the accountno as the key.
+[4]     Print all information in the database.
+[5]     Delete an existing record from the database.
+[0]     Exit the program.
+-------------------------------------------
+Please enter a number: 4
+-------------------------------------------
+Printing all records!
+
+The database is empty!
+
+Returning to main menu...
+-------------------------------------------
+[1]     Add a new record in the database.
+[2]     Modify a record in the database.
+[3]     Print information about a record using the accountno as the key.
+[4]     Print all information in the database.
+[5]     Delete an existing record from the database.
+[0]     Exit the program.
+-------------------------------------------
+Please enter a number: 5
+-------------------------------------------
+Please have the account number you wish to remove ready!
+YOUR ACCOUNT NUMBER MUST BE BETWEEN 1-999999
+Please enter an account number: 2
+
+The account number: 2 could not be deleted.
+
+Returning to main menu...
+-------------------------------------------
+[1]     Add a new record in the database.
+[2]     Modify a record in the database.
+[3]     Print information about a record using the accountno as the key.
+[4]     Print all information in the database.
+[5]     Delete an existing record from the database.
+[0]     Exit the program.
+-------------------------------------------
+Please enter a number: 1
+-------------------------------------------
+YOUR ACCOUNT NUMBER MUST BE BETWEEN 1-999999
+Please enter an account number: 2345
+Please enter your name: John Smith
+Please enter the address. Once finished, press enter two times.
+2541 Dole Street
+Honolulu Hawii
+
+Success! Returning to main menu...
+-------------------------------------------
+[1]     Add a new record in the database.
+[2]     Modify a record in the database.
+[3]     Print information about a record using the accountno as the key.
+[4]     Print all information in the database.
+[5]     Delete an existing record from the database.
+[0]     Exit the program.
+-------------------------------------------
+Please enter a number: 4
+-------------------------------------------
+Printing all records!
+
+
+2345
+John Smith
+2541 Dole Street
+Honolulu Hawii
+
+
+Returning to main menu...
+-------------------------------------------
+[1]     Add a new record in the database.
+[2]     Modify a record in the database.
+[3]     Print information about a record using the accountno as the key.
+[4]     Print all information in the database.
+[5]     Delete an existing record from the database.
+[0]     Exit the program.
+-------------------------------------------
+Please enter a number: 3
+-------------------------------------------
+Please have your account number you wish to print ready for input!
+YOUR ACCOUNT NUMBER MUST BE BETWEEN 1-999999
+Please enter an account number: 2345
+2345
+John Smith
+2541 Dole Street
+Honolulu Hawii
+
+Success!
+Returning to main menu...
+-------------------------------------------
+[1]     Add a new record in the database.
+[2]     Modify a record in the database.
+[3]     Print information about a record using the accountno as the key.
+[4]     Print all information in the database.
+[5]     Delete an existing record from the database.
+[0]     Exit the program.
+-------------------------------------------
+Please enter a number: 3
+-------------------------------------------
+Please have your account number you wish to print ready for input!
+YOUR ACCOUNT NUMBER MUST BE BETWEEN 1-999999
+Please enter an account number: 5
+The record could not be found with the given account number: 5
+Returning to main menu...
+-------------------------------------------
+[1]     Add a new record in the database.
+[2]     Modify a record in the database.
+[3]     Print information about a record using the accountno as the key.
+[4]     Print all information in the database.
+[5]     Delete an existing record from the database.
+[0]     Exit the program.
+-------------------------------------------
+Please enter a number: 1
+-------------------------------------------
+YOUR ACCOUNT NUMBER MUST BE BETWEEN 1-999999
+Please enter an account number: 9999
+Please enter your name: Jonney Joungg
+Please enter the address. Once finished, press enter two times.
+Jurnier St.
+Hello, Washingon
+
+Success! Returning to main menu...
+-------------------------------------------
+[1]     Add a new record in the database.
+[2]     Modify a record in the database.
+[3]     Print information about a record using the accountno as the key.
+[4]     Print all information in the database.
+[5]     Delete an existing record from the database.
+[0]     Exit the program.
+-------------------------------------------
+Please enter a number: 4
+-------------------------------------------
+Printing all records!
+
+
+2345
+John Smith
+2541 Dole Street
+Honolulu Hawii
+
+
+9999
+Jonney Joungg
+Jurnier St.
+Hello, Washingon
+
+
+Returning to main menu...
+-------------------------------------------
+[1]     Add a new record in the database.
+[2]     Modify a record in the database.
+[3]     Print information about a record using the accountno as the key.
+[4]     Print all information in the database.
+[5]     Delete an existing record from the database.
+[0]     Exit the program.
+-------------------------------------------
+Please enter a number: 5
+-------------------------------------------
+Please have the account number you wish to remove ready!
+YOUR ACCOUNT NUMBER MUST BE BETWEEN 1-999999
+Please enter an account number: 2345
+
+Success! Deleted 1 records.
+Returning to main menu...
+-------------------------------------------
+[1]     Add a new record in the database.
+[2]     Modify a record in the database.
+[3]     Print information about a record using the accountno as the key.
+[4]     Print all information in the database.
+[5]     Delete an existing record from the database.
+[0]     Exit the program.
+-------------------------------------------
+Please enter a number: 4
+-------------------------------------------
+Printing all records!
+
+
+9999
+Jonney Joungg
+Jurnier St.
+Hello, Washingon
+
+
+Returning to main menu...
+-------------------------------------------
+[1]     Add a new record in the database.
+[2]     Modify a record in the database.
+[3]     Print information about a record using the accountno as the key.
+[4]     Print all information in the database.
+[5]     Delete an existing record from the database.
+[0]     Exit the program.
+-------------------------------------------
+Please enter a number: 1
+-------------------------------------------
+YOUR ACCOUNT NUMBER MUST BE BETWEEN 1-999999
+Please enter an account number: 9999
+Please enter your name: This is a duplicate
+Please enter the address. Once finished, press enter two times.
+Hello this is an agg  ddress
+with two lines
+
+Success! Returning to main menu...
+-------------------------------------------
+[1]     Add a new record in the database.
+[2]     Modify a record in the database.
+[3]     Print information about a record using the accountno as the key.
+[4]     Print all information in the database.
+[5]     Delete an existing record from the database.
+[0]     Exit the program.
+-------------------------------------------
+Please enter a number: 4
+-------------------------------------------
+Printing all records!
+
+
+9999
+Jonney Joungg
+Jurnier St.
+Hello, Washingon
+
+
+9999
+This is a duplicate
+Hello this is an address
+with two lines
+
+
+Returning to main menu...
+-------------------------------------------
+[1]     Add a new record in the database.
+[2]     Modify a record in the database.
+[3]     Print information about a record using the accountno as the key.
+[4]     Print all information in the database.
+[5]     Delete an existing record from the database.
+[0]     Exit the program.
+-------------------------------------------
+Please enter a number: 5
+-------------------------------------------
+Please have the account number you wish to remove ready!
+YOUR ACCOUNT NUMBER MUST BE BETWEEN 1-999999
+Please enter an account number: 9999
+
+Success! Deleted 2 records.
+Returning to main menu...
+-------------------------------------------
+[1]     Add a new record in the database.
+[2]     Modify a record in the database.
+[3]     Print information about a record using the accountno as the key.
+[4]     Print all information in the database.
+[5]     Delete an existing record from the database.
+[0]     Exit the program.
+-------------------------------------------
+Please enter a number: 4
+-------------------------------------------
+Printing all records!
+
+The database is empty!
+
+Returning to main menu...
+-------------------------------------------
+[1]     Add a new record in the database.
+[2]     Modify a record in the database.
+[3]     Print information about a record using the accountno as the key.
+[4]     Print all information in the database.
+[5]     Delete an existing record from the database.
+[0]     Exit the program.
+-------------------------------------------
+Please enter a number: 0
+-------------------------------------------
+Goodbye!
+uhx01% exit
+uhx01% 
+script done on Tue Mar 14 21:29:35 2017
